@@ -11,7 +11,23 @@ In particular the areas of:
 
 ## Installation
 
- $ composer install bisq-api
+### composer is required.
+
+On Ubuntu 16.04:
+
+    sudo apt install composer
+ 
+On Ubuntu 14.04
+
+    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+ 
+Anything else, visit http://getcomposer.com.
+
+### now let's get to it! 
+
+    $ git clone https://github.com/dan-da/bisq-api.git
+    $ cd bisq-api
+    $ composer install
  
 ## Building Docs
 
@@ -64,7 +80,7 @@ OK (3 tests, 0.1 seconds)
 
 ## Docs build system
 
-Documentation for each api is contained in /apis/<api>/apidoc.php in a
+Documentation for each api is contained in /apis/\<api>/apidoc.php in a
 structured data format without any display markup.
 
 The build-api-docs.sh script processes each API directory and generates documentation
@@ -77,11 +93,12 @@ API responses contain complex structured data that is difficult to validate
 manually.
 
 As such, a json schema is created for each API response, located in
-/apis/<api>/schema.json.
+/apis/\<api>/schema.json.
 
 Initially, these schemas are created automagically by providing a sample JSON
 response to this tool:
- https://jsonschema.net/#/editor
+
+https://jsonschema.net/#/editor
  
 Further manual editing of the schemas may be desirable as we go forward.
 
