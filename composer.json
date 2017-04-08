@@ -1,4 +1,5 @@
 {
+    "name": "dan-da/bisq-api",
     "require": {
         "nette/tester": "^1.7",
         "justinrainbow/json-schema": "^5.2",
