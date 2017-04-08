@@ -1,0 +1,69 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "items": {
+        "properties": {
+            "account_name": {
+                "type": "string"
+            },
+            "created": {
+                "type": "integer"
+            },
+            "payment_account_id": {
+                "type": "string"
+            },
+            "payment_method_details": {
+                "properties": {
+                    "contractData": {
+                        "properties": {
+                            "address": {
+                                "type": "string"
+                            },
+                            "id": {
+                                "type": "string"
+                            },
+                            "maxTradePeriod": {
+                                "type": "integer"
+                            },
+                            "paymentDetails": {
+                                "type": "string"
+                            },
+                            "paymentDetailsForTradePopup": {
+                                "type": "string"
+                            },
+                            "paymentMethodName": {
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "contract_id": {
+                        "type": "string"
+                    },
+                    "max_trade_period": {
+                        "type": "integer"
+                    },
+                    "payment_details": {
+                        "type": "string"
+                    },
+                    "payment_method_id": {
+                        "type": "string"
+                    },
+                    "single_trade_currency": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "trade_currencies": {
+                "items": {
+                    "type": "string"
+                },
+                "type": "array"
+            }
+        },
+        "type": "object"
+    },
+    "type": "array"
+}

@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "items": {
+        "properties": {
+            "name": {
+                "type": "string"
+            },
+            "symbol": {
+                "type": "string"
+            },
+            "type": {
+                "type": "string"
+            }
+        },
+        "type": "object"
+    },
+    "type": "array"
+}

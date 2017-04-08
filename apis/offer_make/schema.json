@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "properties": {
+        "deposit_address": {
+            "type": "string"
+        },
+        "deposit_amount": {
+            "type": "string"
+        },
+        "detail": {
+            "properties": {
+                "amount": {
+                    "type": "string"
+                },
+                "direction": {
+                    "type": "string"
+                },
+                "min_amount": {
+                    "type": "string"
+                },
+                "mining_fee": {
+                    "type": "string"
+                },
+                "price": {
+                    "type": "string"
+                },
+                "security_deposit": {
+                    "type": "string"
+                },
+                "trade_fee": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "offer_id": {
+            "type": "string"
+        }
+    },
+    "type": "object"
+}

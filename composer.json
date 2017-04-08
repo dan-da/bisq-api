@@ -1,0 +1,10 @@
+{
+    "require": {
+        "nette/tester": "^1.7",
+        "justinrainbow/json-schema": "^5.2",
+        "ext-json": "*",
+        "php": ">=5.3"
+    },
+    "require-dev": {
+    }
+}
